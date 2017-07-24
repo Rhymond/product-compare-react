@@ -1,18 +1,6 @@
 import React from 'react'
 import './index.css'
 
-// const Product = ({product, compare}) =>
-//     <div key={product.id} className="col-3 product-card">
-//       <Card inverse
-//             onClick={() => compare(product)}
-//             color={product.compare ? "success" : "primary"}
-//       >
-//         <CardBlock>
-//           <CardTitle>{product.name}</CardTitle>
-//         </CardBlock>
-//       </Card>
-//     </div>;
-
 const Product = ({product, compare}) =>
     <div key={product.id} className="col-3">
         <div className={"product " + (product.compare ? "compare" : "")} >

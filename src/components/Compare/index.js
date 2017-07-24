@@ -1,5 +1,4 @@
 import React from 'react'
-import {Table} from 'reactstrap'
 import './index.css'
 
 const Compare = ({products}) =>
@@ -8,7 +7,7 @@ const Compare = ({products}) =>
       <div className={(products.length < 2
         ? 'hidden-xs-up'
         : '')}>
-        <Table>
+        <table className="table">
           <thead className="thead-default">
           <tr>
             <th></th>
@@ -45,7 +44,7 @@ const Compare = ({products}) =>
               )}
             </tr>
           </tbody>
-        </Table>
+        </table>
       </div>
     </div>
   </div>;

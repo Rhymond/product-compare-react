@@ -2,12 +2,12 @@ import * as types from '../constants/types';
 
 export function getProducts() {
   return dispatch => {
-    fetch(`${process.env.REACT_APP_API_URL}/v1/api/products`)
+    fetch(`https://api.myjson.com/bins/dfnzz`)
       .then(response => response.json())
       .then(response => {
         dispatch({
           type: types.FETCH_PRODUCTS,
-          payload: response
+          payload: response.products
         });
       })
   }

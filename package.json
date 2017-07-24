@@ -42,7 +42,6 @@
     "react-router-dom": "^4.1.1",
     "react-scripts": "^1.0.10",
     "react-select": "^1.0.0-rc.5",
-    "reactstrap": "^4.8.0",
     "redux": "^3.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
@@ -57,7 +56,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
