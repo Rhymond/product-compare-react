@@ -2,7 +2,7 @@ import * as types from '../constants/types';
 
 export function getProducts() {
   return dispatch => {
-    fetch(`https://api.myjson.com/bins/dfnzz`)
+    fetch(`products.json`)
       .then(response => response.json())
       .then(response => {
         dispatch({
