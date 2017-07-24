@@ -5,9 +5,9 @@
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: all 500ms ease-out;
-     -moz-transition: all 500ms ease-out;
-       -o-transition: all 500ms ease-out;
-          transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 .product:hover {
@@ -58,8 +58,7 @@
   transition: all 200ms ease-out;
 }
 
-.product.compare .image_overlay,
-.product:hover .image_overlay {
+.product.compare .image_overlay, .product:hover .image_overlay {
   opacity: 0.7;
 }
 
