@@ -28,5 +28,6 @@ The MIT License (MIT). Please see License File for more information.
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Rhymond/product-compare-react)
 
 Todo
+-
 - [ ] Write tests
 - [ ] Integrate CI
