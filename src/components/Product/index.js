@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './styles.css'
 
 const Product = ({product, compare}) =>
     <div key={product.id} className="col-3">

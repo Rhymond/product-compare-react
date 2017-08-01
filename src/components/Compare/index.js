@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './styles.css'
 
 const Compare = ({products}) =>
   <div className="row compare">
@@ -30,7 +30,7 @@ const Compare = ({products}) =>
               {products.map(product =>
                 <td key={product.id}>
                 {product.colors.map((color, index) =>
-                    <span key={index} className={color}></span>
+                    <span key={index} className={"bg-" + color}></span>
                 )}
                 </td>
               )}
@@ -38,7 +38,7 @@ const Compare = ({products}) =>
             <tr className="condition">
               <th scope="row">Condition</th>
               {products.map(product =>
-                <td key={product.id} className={product.condition === "Used" ? "red" : "green"}>
+                <td key={product.id} className={product.condition === "Used" ? "bg-red" : "bg-green"}>
                   {product.condition}
                 </td>
               )}
