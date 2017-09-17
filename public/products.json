@@ -5,7 +5,8 @@
       "image": "https://devitems.com/preview/furnish/img/product/1.jpg",
       "price": "$39",
       "colors": ["red", "green", "blue"],
-      "condition": "New"
+      "condition": "New",
+      "description": "Black chair"
     },
     {
       "id": "2",
@@ -13,7 +14,8 @@
       "image": "https://devitems.com/preview/furnish/img/product/2.jpg",
       "price": "$319",
       "colors": ["green", "blue"],
-      "condition": "Used"
+      "condition": "Used",
+      "description": "Amazing lamp"
     },
     {
       "id": "3",
@@ -21,7 +23,8 @@
       "image": "https://devitems.com/preview/furnish/img/product/3.jpg",
       "price": "$239",
       "colors": ["red"],
-      "condition": "Used"
+      "condition": "Used",
+      "description": "Used Statue"
     },
     {
       "id": "4",
@@ -29,7 +32,8 @@
       "image": "https://devitems.com/preview/furnish/img/product/4.jpg",
       "price": "$239",
       "colors": ["blue"],
-      "condition": "New"
+      "condition": "New",
+      "description": "Large Seat"
     }
   ]
 }
