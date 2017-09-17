@@ -1,7 +1,6 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
-import ProductList from '../../components/ProductList';
-import Compare from '../../components/Compare';
+import {Compare, ProductList} from '../../components';
 import * as productActions from '../../actions';
 import {connect} from 'react-redux';
 
@@ -11,14 +10,13 @@ class Home extends React.Component {
   }
 
   render() {
-
     const {products, actions} = this.props;
     const compareProducts = products.filter(product => product.compare);
 
     return (
       <div className="Home mt-5">
         <ProductList products={products} compare={actions.compare}/>
-        <Compare products={compareProducts}/>
+        {compareProducts.length >= 2 ? <Compare products={compareProducts}/> : null}
       </div>
     );
   }
