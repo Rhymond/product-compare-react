@@ -1,6 +1,6 @@
-import registerServiceWorker from './registerServiceWorker';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import registerServiceWorker from './registerServiceWorker'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {BrowserRouter} from 'react-router-dom'
 import {createStore, applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
@@ -17,8 +17,8 @@ const loggerMiddleware = createLogger()
 const store = createStore(
   reducer,
   applyMiddleware(
-    thunkMiddleware, // lets us dispatch() functions
-    loggerMiddleware // neat middleware that logs actions
+    thunkMiddleware,
+    loggerMiddleware
   )
 )
 
@@ -27,5 +27,8 @@ ReactDOM.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>, document.getElementById('root'));
-registerServiceWorker();
+  </Provider>,
+  document.getElementById('root')
+)
+
+registerServiceWorker()

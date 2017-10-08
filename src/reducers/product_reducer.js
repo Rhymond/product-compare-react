@@ -1,8 +1,8 @@
-import * as types from '../constants/types';
+import * as types from '../constants/types'
 
 const INITIAL_STATE = {
   products: []
-};
+}
 
 export default function (state = INITIAL_STATE, action) {
   switch (action.type) {
@@ -11,7 +11,7 @@ export default function (state = INITIAL_STATE, action) {
         ...state, products: action.payload.map(product =>
           ({...product, compare: false})
         )
-      };
+      }
     case types.COMPARE_PRODUCT:
       return {
         ...state, products: state.products.map(product =>
@@ -19,8 +19,8 @@ export default function (state = INITIAL_STATE, action) {
             ({...product, compare: !product.compare}) :
             product
         )
-      };
+      }
     default:
-      return state;
+      return state
   }
 }

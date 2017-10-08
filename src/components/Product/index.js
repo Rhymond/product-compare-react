@@ -17,6 +17,6 @@ const Product = ({product, compare}) =>
                 </div>
             </div>
         </div>
-    </div>;
+    </div>
 
-export default Product;
+export default Product

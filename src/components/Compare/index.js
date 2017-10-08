@@ -43,6 +43,6 @@ const Compare = ({products}) =>
         </tbody>
       </table>
     </div>
-  </div>;
+  </div>
 
-export default Compare;
+export default Compare
