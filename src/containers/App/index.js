@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import {Route, Switch} from 'react-router-dom'
 
-import {Home, NotFound} from '../';
+import {Home, NotFound} from '../'
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <div className="container mt-4">
           <Switch>
             <Route exact path="/" component={Home}/>
@@ -14,6 +14,8 @@ export default class App extends Component {
           </Switch>
         </div>
       </div>
-    );
+    )
   }
 }
+
+export default App

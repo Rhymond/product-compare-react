@@ -1,40 +1,34 @@
-import React from 'react';
-import {bindActionCreators} from 'redux';
-import {Compare, ProductList} from '../../components';
-import * as productActions from '../../actions';
-import {connect} from 'react-redux';
+import React, {Component} from 'react'
+import {bindActionCreators} from 'redux'
+import {Compare, ProductList} from '../../components'
+import * as productActions from '../../actions/product'
+import {connect} from 'react-redux'
 
-class Home extends React.Component {
+class Home extends Component {
   componentWillMount() {
-    this.props.actions.getProducts();
+    this.props.actions.getProducts()
   }
 
   render() {
-    const {products, actions} = this.props;
-    const compareProducts = products.filter(product => product.compare);
+    const {products, actions} = this.props
+    const compareProducts = products.filter(product => product.compare)
 
     return (
-      <div className="Home mt-5">
+      <div className="home mt-5">
         <ProductList products={products} compare={actions.compare}/>
-        {compareProducts.length >= 2 ? <Compare products={compareProducts}/> : null}
+        {compareProducts.length >= 2 &&
+          <Compare products={compareProducts}/>
+        }
       </div>
-    );
+    )
   }
-}
-
-function mapStateToProps(state) {
-  return {
-    products: state.product.products
-  }
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(productActions, dispatch)
-  };
 }
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home);
+  state => ({
+    products: state.product.products
+  }),
+  dispatch => ({
+    actions: bindActionCreators(productActions, dispatch)
+  })
+)(Home)

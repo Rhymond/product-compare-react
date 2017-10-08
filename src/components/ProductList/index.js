@@ -1,5 +1,5 @@
 import React from 'react'
-import {Product} from '../';
+import {Product} from '../'
 
 const ProductList = ({products, compare}) =>
   <div>
@@ -8,6 +8,6 @@ const ProductList = ({products, compare}) =>
           <Product key={product.id} product={product} compare={compare} />
         )}
     </div>
-  </div>;
+  </div>
 
-export default ProductList;
+export default ProductList
