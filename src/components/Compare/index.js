@@ -7,7 +7,7 @@ const Compare = ({products}) =>
       <table className="table">
         <thead className="thead-default">
           <tr>
-            <th></th>
+            <th />
             {products.map(product =>
               <th key={product.id}>
                 {product.name}
@@ -27,7 +27,7 @@ const Compare = ({products}) =>
             {products.map(product =>
               <td key={product.id}>
                 {product.colors.map((color, index) =>
-                  <span key={index} className={"bg-" + color}></span>
+                  <span key={index} className={"bg-" + color} />
                 )}
               </td>
             )}
@@ -35,7 +35,7 @@ const Compare = ({products}) =>
           <tr className="condition">
             <th scope="row">Condition</th>
             {products.map(product =>
-              <td key={product.id} className={product.condition === "Used" ? "bg-red" : "bg-green"}>
+              <td key={product.id} className={product.condition === "Frozen" ? "bg-red" : "bg-green"}>
                 {product.condition}
               </td>
             )}
@@ -43,6 +43,6 @@ const Compare = ({products}) =>
         </tbody>
       </table>
     </div>
-  </div>
+  </div>;
 
 export default Compare

@@ -12,7 +12,7 @@ import App from './containers/App'
 import 'bootstrap/dist/css/bootstrap.css'
 import './styles.css'
 
-const loggerMiddleware = createLogger()
+const loggerMiddleware = createLogger();
 
 const store = createStore(
   reducer,
@@ -20,7 +20,7 @@ const store = createStore(
     thunkMiddleware,
     loggerMiddleware
   )
-)
+);
 
 ReactDOM.render(
   <Provider store={store}>
@@ -29,6 +29,6 @@ ReactDOM.render(
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')
-)
+);
 
-registerServiceWorker()
+registerServiceWorker();

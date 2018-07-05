@@ -2,7 +2,7 @@
 
 Product comparison page build using **React** + **Redux** + **Bootstrap** + **SASS**
 
-![Screenshot](http://i.imgur.com/0fTmInU.png)
+![Screenshot](https://s8.postimg.cc/fdfsvumkl/Screen_Shot_2018-07-05_at_16.36.17.png)
 
 It's build on top of [`create-react-app`](http://www.google.lt)
 
@@ -26,8 +26,3 @@ License
 The MIT License (MIT). Please see License File for more information.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Rhymond/product-compare-react)
-
-Todo
--
-- [ ] Write tests
-- [ ] Integrate CI

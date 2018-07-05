@@ -1,39 +1,39 @@
 {
   "products": [{
       "id": "1",
-      "name": "Chair",
-      "image": "https://devitems.com/preview/furnish/img/product/1.jpg",
-      "price": "$39",
+      "name": "Cherry",
+      "image": "images/Cherry.png",
+      "price": "$1.99",
       "colors": ["red", "green", "blue"],
-      "condition": "New",
-      "description": "Black chair"
+      "condition": "Fresh",
+      "description": "Two Cherries"
     },
     {
       "id": "2",
-      "name": "Lamp",
-      "image": "https://devitems.com/preview/furnish/img/product/2.jpg",
-      "price": "$319",
+      "name": "Orange",
+      "image": "images/Orange.png",
+      "price": "$2.99",
       "colors": ["green", "blue"],
-      "condition": "Used",
-      "description": "Amazing lamp"
+      "condition": "Frozen",
+      "description": "Giant Orange"
     },
     {
       "id": "3",
-      "name": "Statue",
-      "image": "https://devitems.com/preview/furnish/img/product/3.jpg",
-      "price": "$239",
+      "name": "Nuts",
+      "image": "images/Nuts.png",
+      "price": "$1.00",
       "colors": ["red"],
-      "condition": "Used",
-      "description": "Used Statue"
+      "condition": "Frozen",
+      "description": "Mixed Nuts"
     },
     {
       "id": "4",
-      "name": "Seat",
-      "image": "https://devitems.com/preview/furnish/img/product/4.jpg",
-      "price": "$239",
+      "name": "Strawberry",
+      "image": "images/Strawberry.png",
+      "price": "$1.49",
       "colors": ["blue"],
-      "condition": "New",
-      "description": "Large Seat"
+      "condition": "Fresh",
+      "description": "Just Strawberry"
     }
   ]
 }
