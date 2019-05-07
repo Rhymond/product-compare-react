@@ -3,7 +3,7 @@
       "id": "1",
       "name": "Cherry",
       "image": "images/Cherry.png",
-      "price": "$1.99",
+      "price": "rs99.99",
       "colors": ["red", "green", "blue"],
       "condition": "Fresh",
       "description": "Two Cherries"
@@ -12,7 +12,7 @@
       "id": "2",
       "name": "Orange",
       "image": "images/Orange.png",
-      "price": "$2.99",
+      "price": "rs200.99",
       "colors": ["green", "blue"],
       "condition": "Frozen",
       "description": "Giant Orange"
@@ -21,7 +21,7 @@
       "id": "3",
       "name": "Nuts",
       "image": "images/Nuts.png",
-      "price": "$1.00",
+      "price": "100.00",
       "colors": ["red"],
       "condition": "Frozen",
       "description": "Mixed Nuts"
@@ -30,7 +30,7 @@
       "id": "4",
       "name": "Strawberry",
       "image": "images/Strawberry.png",
-      "price": "$1.49",
+      "price": "90.49",
       "colors": ["blue"],
       "condition": "Fresh",
       "description": "Just Strawberry"
