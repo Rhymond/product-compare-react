@@ -6,7 +6,15 @@ const Product = ({product, compare}) =>
         <div className={"product " + (product.compare ? "compare" : "")} >
             <img src={product.image} alt={product.name} />
             <div className="image_overlay"/>
-            <div className="view_details" onClick={() => compare(product)}>
+            <div className="view_details" onClick={() => {
+                window.FS.log('info', `Clicked product ${product.name}`)
+                window.FS.event('Product Clicked', {
+                    productName: product.name,
+                    productPrice: product.price,
+                    productDescription: product.description
+                })
+                compare(product)
+            }}>
               {product.compare ? "Remove" : "Compare"}
             </div>
             <div className="stats">

@@ -1,6 +1,6 @@
-# React Example - Product Compare Page :tada: :fireworks:
+# Modified React Example - Product Compare Page :tada: :fireworks:
 
-Product comparison page build using **React** + **Redux** + **Bootstrap** + **SASS**
+Product comparison page build using **React** + **Redux** + **Bootstrap** + **SASS** + **FullStory** + **Firebase Auth**
 
 ![Screenshot](https://s8.postimg.cc/fdfsvumkl/Screen_Shot_2018-07-05_at_16.36.17.png)
 
@@ -14,7 +14,7 @@ Documentation how to *run*, *build* and *test* app
 
 Demo
 -
-> http://react-compare-app.surge.sh
+> https://product-compare-c0576.firebaseapp.com/
 
 Contributing
 -
