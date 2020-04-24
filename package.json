@@ -63,7 +63,8 @@
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.0.1"
+    "eslint-plugin-react": "^7.0.1",
+    "redux-devtools-extension": "^2.13.8"
   },
   "jest": {
     "collectCoverageFrom": [
