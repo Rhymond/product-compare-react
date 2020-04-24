@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter} from 'react-router-dom'
 import {createStore, applyMiddleware} from 'redux'
+import {composeWithDevTools} from 'redux-devtools-extension';
 import {Provider} from 'react-redux'
 import thunkMiddleware from 'redux-thunk'
 import { createLogger } from 'redux-logger'
@@ -16,10 +17,10 @@ const loggerMiddleware = createLogger();
 
 const store = createStore(
   reducer,
-  applyMiddleware(
+  composeWithDevTools(applyMiddleware(
     thunkMiddleware,
     loggerMiddleware
-  )
+  ))
 );
 
 ReactDOM.render(
