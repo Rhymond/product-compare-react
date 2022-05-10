@@ -34,6 +34,15 @@
       "colors": ["blue"],
       "condition": "Fresh",
       "description": "Just Strawberry"
+    },
+               {
+      "id": "5",
+      "name": "apple",
+      "image": "images/apple.png",
+      "price": "$11.49",
+      "colors": ["red"],
+      "condition": "Frozen",
+      "description": "Just apple"
     }
   ]
 }
